@@ -11,7 +11,10 @@
   "homepage": "https://bitbucket.org/Modjoo/awa1#readme",
   "dependencies": {
     "chart.js": "^2.4.0",
+    "gsap": "^1.19.1",
     "jquery": "^3.1.1",
-    "materialize-css": "^0.97.8"
+    "materialize-css": "^0.97.8",
+    "normalize.css": "^5.0.0",
+    "scrollmagic": "^2.0.5"
   }
 }

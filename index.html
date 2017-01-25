@@ -1,15 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/materialize-css/dist/js/materialize.js"></script>    
-    <script src="script/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.css"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" /> 
+  <meta charset="UTF-8">
+  <title>AWA_1</title>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+  <script src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+  <script src="node_modules/gsap/src/uncompressed/jquery.gsap.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+  <script src="script/utils.js"></script>
+  <script src="script/model/data.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.css">
+  </script>
+  <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 </head>
+
 <body>
-    <h1> Hello world</h1>
+  <div id="container">
+
+    <section id="intro">
+      <div id="intro-content" class="centered content">
+        <h3 class="text-center">Analyseur de document</h3>
+        <p class="text-center">La meilleure façon de faire le ménage !</p>
+      </div>
+    </section>
+    <!-- Pour les animations ... Ne pas hesiter a créer des svg afin de les animés (Ligne avec des courbes !);-->
+    <section id="ou" class="section-ou">
+      <div id="trigger1" class="trigger-space"></div>
+      <div id="ou-content" class="centered content">
+        <h3 class="text-center">Compatibilité</h3>
+        <img src="images/button/cercle-point.png" class="gros-point point anim-point-1 opacity-zero" />
+
+        <img src="images/ou/line1_1.png" class="centered line opacity-zero img2" style="width: 890px;" alt="Lignes" />
+
+<img src="images/icons/bs_android.png" class="icons opacity-zero  anim-android" style="right:700px;" alt="Icone Android" />
+<div id="trigger2" class="trigger-space"></div>
+<img src="images/icons/bs_apple.png" class="icons opacity-zero anim-apple" style="right: 475px;" alt="Icone Apple" />
+<img src="images/icons/bs_windows.png" class="icons opacity-zero anim-windows" style="right: 250px;" alt="Icone Windows "/>
+<img src="images/button/cercle-bleu-moyen.png" class="centered point-petit opacity-zero anim-point-2" alt="Point" />
+
+<div class="info">
+  <h5>Compatibilité cross-platform</h5>
+  <p>Qu’importe votre environnement notre logiciel sera compatible. Windows, linux, android, ios, aucune préférence chaque périphérique
+    mérite un nettoyage de qualité !</p>
+</div>
+<!-- Quel type de périfériques ainsi que quel disque dur, fonctionne sur tous les os !!! -->
+
+
+</div>
+
+</section>
+
+<section id="logiciel">
+  <div class="centered content">
+    <div class="chart">
+      <canvas id="chart-area"></canvas>
+      <button id="reset">Reset</button>
+      <button id="chart-return">Return</button>
+    </div>
+    <div id="legends">
+      <h5>Legends</h5>
+      <div class="foo blue">
+        <div class="foo-content">
+          <p>
+            Oui BLUE
+          </p>
+        </div>
+      </div>
+      <div class="foo purple">
+        <div class="foo-content">
+          <p>
+            Oui BLUE
+          </p>
+        </div>
+      </div>
+      <div class="foo wine">
+        <div class="foo-content">
+          <p>
+            Oui BLUE
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <canvas id="chart-area"></canvas>-->
+
+
+    <script src="script/polar-chart.js"></script>
+
+    <!-- Ou acheter le produit de ouf -->
+</section>
+
+
+<section id="pourquoi">
+  LOl pourquoi ?!
+  <!-- Optimisation de performance -->
+  <!-- Gain de place ... -->
+</section>
+<section id="techno">
+  <!-- Technologie utilisé (nodejs, javascript ...). -->
+</section>
+<section id="acheter">
+  <!-- Ou acheter le produit de ouf -->
+</section>
+
+
+
+<section id="footer">
+  <!-- le footer avec les logos -->
+</section>
+
+
+
+</div>
+<script src="script/script.js"></script>
 </body>
+
 </html>
