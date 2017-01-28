@@ -5,6 +5,15 @@ html {
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
+    color: #01030b;
+}
+
+.little-text{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    text-shadow: -2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .opacity-zero {
@@ -12,7 +21,7 @@ html {
 }
 
 .trigger-space{
-    border: 1px solid blueviolet;
+    border: 1px solid transparent;
 }
 
 .centered{
@@ -31,8 +40,39 @@ html {
     width: 1024px;
 }
 
+.close-modal-container{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.close-modal{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#modal-content-data {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
 .text-center{
     text-align: center;
+}
+
+.titre-style{
+	
+	text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: -2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .section-ou .point {
@@ -83,20 +123,20 @@ html {
     width: 100%;
 }
 #legends{
-    margin-top:40%;
+    margin-top:45%;
 }
-.foo {
+.legend {
   float: left;
   width: 100px;
   height: 50px;
   margin: 1%;
   border: 1px solid rgba(0, 0, 0, .2);
 }
-.foo-content{
+.legend-content{
     width:100%;
     padding:15%;
 }
-.foo-content p{
+.legend-content p{
     float:left;
     margin-top:-1px;
     display:inline-block;
@@ -106,16 +146,37 @@ html {
 
 }
 
-.blue {
-  background: #13b4ff;
+#comment-utiliser{
+    height: 225px;
+    text-align: center;
 }
 
-.purple {
-  background: #ab3fdd;
+#comment-utiliser .container{
+    position: relative;
+    padding: 15px;
+    width: 70%;
+    height: 50%;
+    border:4px dashed #2E2E2E;
 }
 
-.wine {
-  background: #ae163e;
+#key-navigation{
+    position: absolute;
+    top: -60px;
+    left: 20px;
+}
+
+#key-navigation-return{
+position: absolute;
+    top: 22px;
+    right: 100px;
+}
+#key-navigation-reset{
+    padding-top: 7px;
+}
+
+#key-navigation-enter{
+    position: absolute;
+    left: 120px;
 }
 
 #intro{
@@ -124,7 +185,7 @@ html {
     background-position: top;
     background-repeat: no-repeat;
     background-color: #C1C0C5;
-    height: 640px;
+    height: 720px;
 }
 
 #intro-content{

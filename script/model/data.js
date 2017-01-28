@@ -19,6 +19,8 @@ var data = function (data) {
             color = colorTools(chartColors.purple).alpha(0.5).rgbString();
         } else if (type == 'movie'){
             color = colorTools(chartColors.red).alpha(0.5).rgbString();
+        } else if (type == 'document'){
+            color = colorTools(chartColors.blue).alpha(0.5).rgbString();
         }
         return color;
     }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="73.684px" height="158.165px" viewBox="0 0 73.684 158.165" enable-background="new 0 0 73.684 158.165"
+	 xml:space="preserve">
+<ellipse id="souris" fill="none" stroke="#000000" stroke-miterlimit="10" cx="36.842" cy="96.467" rx="36.342" ry="61.198"/>
+<g id="souris-haut">
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M5.396,66.524c16.893,17.796,45.243,18.26,63.386,1.038"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="36.842" y1="35.269" x2="36.842" y2="80.548"/>
+</g>
+<path id="click-gauche" fill="#100F18" d="M5.396,66.524c6.396,8.307,17.271,14.024,31.446,13.653c0-17.597,0-17.597,0-44.909
+	C36.842,35.269,17.125,32.843,5.396,66.524z"/>
+<path id="cable" fill="none" stroke="#000000" stroke-miterlimit="10" d="M36.842,35.269c0.241-2.102,0.644-7.554-2.259-12.936
+	c-3.596-6.667,3.963-10.5-4.037-11.167C17.417,7,32.417,6.667,32.917,0"/>
+</svg>

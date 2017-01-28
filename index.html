@@ -14,9 +14,12 @@
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+  <script src="libs/js/snap.svg-min.js"></script>
   <script src="script/utils.js"></script>
   <script src="script/model/data.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="libs/css/animate.css">
+  </script>
   <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.css">
   </script>
   <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
@@ -29,23 +32,23 @@
 
     <section id="intro">
       <div id="intro-content" class="centered content">
-        <h3 class="text-center">Analyseur de document</h3>
-        <p class="text-center">La meilleure façon de faire le ménage !</p>
-      </div>
-    </section>
-    <!-- Pour les animations ... Ne pas hesiter a créer des svg afin de les animés (Ligne avec des courbes !);-->
-    <section id="ou" class="section-ou">
-      <div id="trigger1" class="trigger-space"></div>
-      <div id="ou-content" class="centered content">
-        <h3 class="text-center">Compatibilité</h3>
-        <img src="images/button/cercle-point.png" class="gros-point point anim-point-1 opacity-zero" />
+        <h3 class="text-center titre-style">Analyseur de document</h3>
+        <p class="text-center titre-style" style="font-weight:lighter">La meilleure façon de faire le ménage !</p>
+</div>
+</section>
+<!-- Pour les animations ... Ne pas hesiter a créer des svg afin de les animés (Ligne avec des courbes !);-->
+<section id="ou" class="section-ou">
+  <div id="trigger1" class="trigger-space"></div>
+  <div id="ou-content" class="centered content">
+    <h3 class="text-center titre-style">Compatibilité</h3>
+    <img src="images/button/cercle-point.png" class="gros-point point anim-point-1 opacity-zero" />
 
-        <img src="images/ou/line1_1.png" class="centered line opacity-zero img2" style="width: 890px;" alt="Lignes" />
+    <img src="images/ou/line1_1.png" class="centered line opacity-zero img2" style="width: 890px;" alt="Lignes" />
 
 <img src="images/icons/bs_android.png" class="icons opacity-zero  anim-android" style="right:700px;" alt="Icone Android" />
-<div id="trigger2" class="trigger-space"></div>
+<div id="trigger-platform" class="trigger-space" style="margin-top:245px;"></div>
 <img src="images/icons/bs_apple.png" class="icons opacity-zero anim-apple" style="right: 475px;" alt="Icone Apple" />
-<img src="images/icons/bs_windows.png" class="icons opacity-zero anim-windows" style="right: 250px;" alt="Icone Windows "/>
+<img src="images/icons/bs_windows.png" class="icons opacity-zero anim-windows" style="right: 250px;" alt="Icone Windows " />
 <img src="images/button/cercle-bleu-moyen.png" class="centered point-petit opacity-zero anim-point-2" alt="Point" />
 
 <div class="info">
@@ -60,52 +63,172 @@
 
 </section>
 
+<section id="comment-utiliser">
+  <div id="trigger-comment-utiliser" class="trigger-space"></div>
+  <h3>Comment utiliser</h3>
+  <div class="container">
+    <div id="key-navigation">
+      <svg style="width: 75px;"version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="155px" height="91px" viewBox="0 0 155 91" enable-background="new 0 0 155 91" xml:space="preserve">
+<path id="Box" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M153.5,77.5c0,6.627-5.373,12-12,12
+            h-128c-6.627,0-12-5.373-12-12v-64c0-6.627,5.373-12,12-12h128c6.627,0,12,5.373,12,12V77.5z" />
+
+</svg>
+<span style="position: absolute;
+    top: 103px;
+    left: 15px;" class="opacity-zero" id="ctrl">CTRL</span>
+<svg id="plus" class="opacity-zero" style="top: -37px;    left: 10px;  position: relative;"height="16px" id="Layer_1" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+y="0px">
+<path d="M15,6h-5V1c0-0.55-0.45-1-1-1H7C6.45,0,6,0.45,6,1v5H1C0.45,6,0,6.45,0,7v2c0,0.55,0.45,1,1,1h5v5c0,0.55,0.45,1,1,1h2  c0.55,0,1-0.45,1-1v-5h5c0.55,0,1-0.45,1-1V7C16,6.45,15.55,6,15,6z"
+/>
+</svg>
+
+<svg style="width: 30px;    position: relative;    left: 16px;    top: 25px;" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="73.684px" height="158.165px" viewBox="0 0 73.684 158.165" enable-background="new 0 0 73.684 158.165" xml:space="preserve">
+<ellipse class="opacity-zero" id="souris" fill="none" stroke-width="3" stroke="#000000" stroke-miterlimit="10" cx="36.842"
+  cy="96.467" rx="36.342" ry="61.198" />
+<g class="opacity-zero" id="souris-haut">
+  <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M5.396,66.524c16.893,17.796,45.243,18.26,63.386,1.038"
+  />
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="36.842" y1="35.269" x2="36.842" y2="80.548"
+  />
+</g>
+<path class="opacity-zero" id="click_gauche_1" fill="#100F18" d="M5.396,66.524c6.396,8.307,17.271,14.024,31.446,13.653c0-17.597,0-17.597,0-44.909
+            C36.842,35.269,17.125,32.843,5.396,66.524z" />
+<path id="cable_1" fill="none" stroke-width="3" stroke="#000000" stroke-miterlimit="10" d="M36.842,35.269c0.241-2.102,0.644-7.554-2.259-12.936
+            c-3.596-6.667,3.963-10.5-4.037-11.167C17.417,7,32.417,6.667,32.917,0" />
+</svg>
+<span style="    position: relative;    top: -39px;    left: 29px;" id="info-txt" class="opacity-zero little-text">INFO</span>
+</div>
+<div id="key-navigation-return">
+  <div id="chart-return" style="z-index:10; cursor: pointer;">
+
+  <?xml version="1.0" encoding="iso-8859-1"?>
+  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <svg id="return-svg" class="opacity-zero" style="width: 60px;"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+<g>
+  <g>
+    <path d="M384.834,180.699c-0.698,0-348.733,0-348.733,0l73.326-82.187c4.755-5.33,4.289-13.505-1.041-18.26
+			c-5.328-4.754-13.505-4.29-18.26,1.041l-82.582,92.56c-10.059,11.278-10.058,28.282,0.001,39.557l82.582,92.561
+			c2.556,2.865,6.097,4.323,9.654,4.323c3.064,0,6.139-1.083,8.606-3.282c5.33-4.755,5.795-12.93,1.041-18.26l-73.326-82.188
+			c0,0,348.034,0,348.733,0c55.858,0,101.3,45.444,101.3,101.3s-45.443,101.3-101.3,101.3h-61.58
+			c-7.143,0-12.933,5.791-12.933,12.933c0,7.142,5.79,12.933,12.933,12.933h61.58c70.12,0,127.166-57.046,127.166-127.166
+			C512,237.745,454.954,180.699,384.834,180.699z" />
+  </g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+<span id="return-text" class="opacity-zero little-text" style="position: absolute;   top: 24px;
+    left: 68px;">RETOUR</span></div>
+</div>
+<div id="key-navigation-reset">
+  <div id="reset" style="position: absolute;
+    top: 20%;
+    left: 41%;
+    width: 212px;
+    height: 63px;
+    cursor: pointer;
+    z-index: 10;">
+</div>
+
+    <svg id="reset-svg" class="opacity-zero" style="height: 60px;"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0
+1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g>
+  <path d="M143.6,500H10l178.2,178.2L366.4,500H232.7c0-147.4,119.8-267.3,267.3-267.3c45,0,87.8,11.1,124.7,31.2l65-65C635,164.1,569.9,143.6,500,143.6C303.1,143.6,143.6,303.1,143.6,500L143.6,500z M767.3,500c0,147.4-119.8,267.3-267.3,267.3c-45,0-87.8-11.1-124.7-31.2l-65,65c54.8,34.7,119.8,55.2,189.8,55.2c196.9,0,356.4-159.5,356.4-356.4H990L811.8,321.8L633.6,500H767.3L767.3,500z"
+  />
+</g>
+</svg>
+<span id="reset-text" class="opacity-zero little-text" style="position: relative;
+    top: -23px;">RESET</span>
+
+</div>
+</div>
+</section>
+
 <section id="logiciel">
   <div class="centered content">
     <div class="chart">
       <canvas id="chart-area"></canvas>
-      <button id="reset">Reset</button>
-      <button id="chart-return">Return</button>
     </div>
     <div id="legends">
       <h5>Legends</h5>
-      <div class="foo blue">
-        <div class="foo-content">
-          <p>
-            Oui BLUE
-          </p>
-        </div>
-      </div>
-      <div class="foo purple">
-        <div class="foo-content">
-          <p>
-            Oui BLUE
-          </p>
-        </div>
-      </div>
-      <div class="foo wine">
-        <div class="foo-content">
-          <p>
-            Oui BLUE
-          </p>
-        </div>
-      </div>
-    </div>
+      <div class="legend" style="background: #FFCFA0;">
+<div class="legend-content">
+  <p>
+    Dossier
+  </p>
+</div>
+</div>
+<div class="legend" style="background: #A5E0E0;">
+<div class="legend-content">
+  <p>
+    Image
+  </p>
+</div>
+</div>
+<div class="legend" style="background: #9BD1F5;">
+<div class="legend-content">
+  <p>
+    Document
+  </p>
+</div>
+</div>
+<div class="legend" style="background: #CCB3FF;">
+<div class="legend-content">
+  <p>
+    Ficher
+  </p>
+</div>
+</div>
+<div class="legend" style="background: #FFB1C2;">
+<div class="legend-content">
+  <p>
+    Film
+  </p>
+</div>
+</div>
+</div>
 
-    <!-- <canvas id="chart-area"></canvas>-->
+<!-- <canvas id="chart-area"></canvas>-->
 
 
-    <script src="script/polar-chart.js"></script>
+<script src="script/polar-chart.js"></script>
 
-    <!-- Ou acheter le produit de ouf -->
+<!-- Ou acheter le produit de ouf -->
 </section>
 
-
-<section id="pourquoi">
-  LOl pourquoi ?!
-  <!-- Optimisation de performance -->
-  <!-- Gain de place ... -->
-</section>
 <section id="techno">
   <!-- Technologie utilisé (nodejs, javascript ...). -->
 </section>
@@ -119,10 +242,32 @@
   <!-- le footer avec les logos -->
 </section>
 
+<section id="modal">
+  <!--Call your modal-->
+  <a id="modal-trigger" href="#animatedModal" style="display: none;">DEMO01</a>
+
+<!--DEMO01-->
+<div id="animatedModal">
+  <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+  <div class="close-animatedModal">
+    <div class="close-modal-container" class="close-teste">
+      <img class="close-modal" src="images/close.svg">
+    </div>
+  </div>
+
+  <div class="modal-content">
+    <div id="modal-content-data"></div>
+  </div>
+</div>
+<!-- Optimisation de performance -->
+<!-- Gain de place ... -->
+</section>
 
 
 </div>
+<script src="libs/js/animatedModal.js"></script>
 <script src="script/script.js"></script>
+<script src="script/main.js"></script>
 </body>
 
 </html>
